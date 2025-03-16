@@ -191,7 +191,7 @@ describe('objects-tasks', () => {
         },
         {
           queue: [25, 25, 25, 25, 50, 100, 50],
-          expected: false,
+          expected: true,
         },
       ].forEach((data) => {
         assert.equal(tasks.sellTickets(data.queue), data.expected);
